@@ -4,10 +4,15 @@ body{
     color: #0A143A;  
     /* цвет текста */
 }
-.header {
+
+.container {
     max-width: 1146px;
     margin: auto;
-    padding-top: 35px;
+}
+.header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 12px;
 }
 .navbar {
     display: flex;
@@ -89,4 +94,111 @@ align-items: center;
 .search-button-text {
     color: white;
     margin-left: 5px;
+}
+
+
+.page-content{
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    grid-column-gap: 30px;
+}
+.card-image{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 264px;
+    height: 178px;
+    object-fit: cover;
+    /* обрезка при изменении размера */
+    margin-bottom: 12px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    width: 264px;
+    margin-bottom: 20px;
+}
+.card:not(:nth-child(3n)){
+    margin-right: 20px;
+    /* карточки в ряд и у третьей нет отступа */
+}
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.card-link{
+    text-decoration: none;
+}
+.card-title{
+    font-size: 16px;
+line-height: 19px;
+color: #256EEB;
+}
+.like{
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    margin-left: 15px;
+}
+.card-price{
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 10px;
+    display: block;
+    /* прописали, чтоб сработал отступ вниз */
+}
+.card-text{
+    font-size: 14px;
+line-height: 16px;
+color: #C4C4C4;
+margin-bottom: 0;
+/* для отключения отступов шрифта */
+}
+
+.sidebar .page-title{
+    font-size: 18px;
+    line-height: 21px;
+} 
+.service{
+    margin-bottom: 25px;
+}
+.service-title{
+    margin-top: 7px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 16px;
+}
+.service-text{
+    font-size: 14px;
+    line-height: 16px;
+    color: #0A143A;
+    max-width: 231px;
+}
+
+.footer-text{
+    display: inline-block;
+    /* чтоб заработали отступы. добавили уже в конце */
+    font-size: 14px;
+    line-height: 16px;
+    color: #C4C4C4;
+    margin-bottom: 5px;
+}
+.footer-menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 16px;
+}
+.footer-link{
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 5px;
 }
